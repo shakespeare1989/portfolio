@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import './img_bg';
+import React, { Component } from 'react';
+
 
 export default class Introduction extends Component {
   render() {
