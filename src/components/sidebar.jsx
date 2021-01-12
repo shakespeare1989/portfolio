@@ -30,7 +30,7 @@ export default class Sidebar extends Component {
                 <li><a href="https://www.instagram.com/ladyindev/" target="_blank" rel="noopener noreferrer"><i className="icon-instagram" /></a></li>
                 <li><a href="https://www.linkedin.com/in/autumn-shakespeare-979b0750/" target="_blank" rel="noopener noreferrer"><i className="icon-linkedin2" /></a></li>
                 <li><a href="https://github.com/akichan89" target="_blank" rel="noopener noreferrer"><i className="icon-github"></i></a></li>
-                <li><a href="ladyindev.blogspot.com" target="_blank" rel="noopener noreferrer"><i className="icon-blogger2"></i></a></li>
+                <li><a href="https://ladyindev.blogspot.com/" target="_blank" rel="noopener noreferrer"><i className="icon-blogger2"></i></a></li>
               </ul>
             </nav>
             <div className="colorlib-footer">
