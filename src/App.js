@@ -1,25 +1,42 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import Sidebar from './components/sidebar'
-import Introduction from './components/introduction'
-import About from './components/about'
-import Timeline from './components/timeline'
+import {
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
+import Navbar from './components/Navbar';
+import Home from './contents/Home';
+import About from './contents/About';
+import Education from './contents/Education';
+import Skills from './contents/Skills';
+import Contact from './contents/Contact';
 
-class App extends Component {
-  render() {
-    return (
-      <div id="colorlib-page">
-        <div id="container-wrap">
-         	<Sidebar></Sidebar>
-				<div id="colorlib-main">
-					<Introduction></Introduction>
-					<About></About>
-					<Timeline></Timeline>
-          	</div>
-      	</div>
-      </div>
+
+
+function App() {
+  return (
+    <Router>
+    <div className="App">
+    <Navbar />
+    <Route exact path="/">
+    <Home />
+    </Route>
+    <Route path="/about">
+    <About />
+    </Route>
+    <Route path="/education">
+    <Education />
+    </Route>
+    <Route path="/skills">
+    <Skills />
+    </Route>
+    <Route path="/contact">
+    <Contact />
+    </Route>
+    </div>
+    </Router>
     );
   }
-}
-
-export default App;
+  
+  export default App;
+  
